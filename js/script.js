@@ -64,8 +64,11 @@ const product = document.querySelectorAll('.product')
 for (let i = 0; i < product.length; i++) {
     product[i].classList.add("relative", "group")
     const button = document.createElement('button')
+    const shadow = product[i].querySelector('.shadow');
+    shadow.classList.add("group-hover:block")
     button.classList.add("py-1", "w-[50%]", "text-white", "bg-[#FFB700]", "absolute", "top-1/2", "left-1/2", "translate-x-[-50%]", "translate-y-[-50%]", "hidden", "group-hover:block")
     button.textContent = "SHOP NOW"
+    button.style.zIndex = "51"
     button.addEventListener("click", () => {
         addCart()
     })
