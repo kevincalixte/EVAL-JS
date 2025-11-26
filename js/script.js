@@ -5,6 +5,7 @@ const selectCategory = document.getElementById("categorySelect")
 
 selectCategory.addEventListener("click", () => {
 
+    if (selectCategory.length > 1) return;
     menuContent.forEach(value => {
         // console.log(value)
         const imgSrc = value.imgSrc
