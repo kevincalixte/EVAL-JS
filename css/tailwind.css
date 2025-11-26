@@ -1,0 +1,10 @@
+body {
+	font-family: 'Oswald', sans-serif;
+}
+
+i{
+    cursor: pointer;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

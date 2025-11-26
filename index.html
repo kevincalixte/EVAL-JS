@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tailwind.output.css" />
+  <script type="module" src="js/script.js" defer></script>
+  <title>CarMe</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <!-- NAV1 -->
+    <nav class="w-full h-20 flex items-center justify-between px-5 bg-black">
+      <div class="w-[40%]">
+        <img src="/assets/img/logo_light.avif" alt="" />
+      </div>
+      <div class="flex gap-5 text-white">
+        <i id="btnBurger" class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </nav>
+    <!-- NAV2 -->
+    <nav class="flex justify-around p-4 bg-[#FFB700]">
+      <select class="px-10 my-1" name="categories" id="categories">
+        <option value="">ALL CATEGORIES</option>
+      </select>
+
+      <div class="flex gap-4 items-center">
+        <i class="text-white fa-solid fa-phone-volume"></i>
+        <p>(1234) 1234 012</p>
+      </div>
+    </nav>
+    <!-- CAROUSEL  -->
+    <section class="relative">
+      <img src="/assets/img/slider-1-1.webp" alt="" />
+      <div class="absolute top-0 p-5 flex flex-col">
+        <span class="text-[#FFB700]">Get up to 50% off Today Only!</span>
+        <span class="text-2xl mb-7 border-white">Winter Sale For Auto Parts</span>
+        <button class="py-2 w-[50%] text-white bg-[#FFB700]">SHOP NOW</button>
+      </div>
+    </section>
+  </header>
+
+  <!-- MAIN -->
+  <main class="px-3">
+    <!-- BAR -->
+    <div class="flex justify-between pt-3">
+      <h1 class="font-semibold text-2xl pt-2">Exclusive Products</h1>
+      <div class="flex gap-3">
+        <a class="text-[#FFB700]" href="">Brake Disc</a>
+        <a href="">Replica Wheels</a>
+        <a href="">Steel Rim</a>
+      </div>
+    </div>
+    <div class="w-full border-b border-[#2A2C2D] my-5"></div>
+
+    <!-- PRODUCTS 1 -->
+    <div id="products" class="">
+      <!-- PRODUCT -->
+      <article>
+        <div class="relative">
+          <img src="/assets/img/BrakeDiscforBMW.webp" alt="">
+          <div class="absolute top-0 m-5 p-1 text-white bg-[#FFB700]">SOLDOUT</div>
+        </div>
+        <span class="font-semibold">Zbrake Disc For BMW</span>
+        <span class="">
+          <span class="flex gap-2 items-center">
+            <span id="product-price" class="text-[#FFB700]">$19.00</span>
+            <span id="product-promo" class="line-through text-[.8rem]">$29.00</span>
+            <span id="product-reduction" class="text-[#63A464]">-34%</span>
+          </span>
+        </span>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+      </article>
+
+      <article>
+        <div class="relative">
+          <img src="/assets/img/BrakePadsforChevrolet.webp" alt="">
+          <div class="absolute top-0 m-5 p-1 text-white bg-[#FFB700]">SOLDOUT</div>
+        </div>
+        <span class="font-semibold">Zbrake Disc For BMW</span>
+        <span class="">
+          <span class="flex gap-2 items-center">
+            <span id="product-price" class="text-[#FFB700]">$19.00</span>
+            <span id="product-promo" class="line-through text-[.8rem]">$29.00</span>
+            <span id="product-reduction" class="text-[#63A464]">-34%</span>
+          </span>
+        </span>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+      </article>
+
+      <article>
+        <div class="relative">
+          <img src="/assets/img/V6EnginePiston.webp" alt="">
+          <div class="absolute top-0 m-5 p-1 text-white bg-[#FFB700]">SOLDOUT</div>
+        </div>
+        <span class="font-semibold">Zbrake Disc For BMW</span>
+        <span class="">
+          <span class="flex gap-2 items-center">
+            <span id="product-price" class="text-[#FFB700]">$19.00</span>
+            <span id="product-promo" class="line-through text-[.8rem]">$29.00</span>
+            <span id="product-reduction" class="text-[#63A464]">-34%</span>
+          </span>
+        </span>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+      </article>
+
+      <article>
+        <div class="relative">
+          <img src="/assets/img/BrakeDiscforBMW.webp" alt="">
+          <div class="absolute top-0 m-5 p-1 text-white bg-[#FFB700]">SOLDOUT</div>
+        </div>
+        <span class="font-semibold">Zbrake Disc For BMW</span>
+        <span class="">
+          <span class="flex gap-2 items-center">
+            <span id="product-price" class="text-[#FFB700]">$19.00</span>
+            <span id="product-promo" class="line-through text-[.8rem]">$29.00</span>
+            <span id="product-reduction" class="text-[#63A464]">-34%</span>
+          </span>
+        </span>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+      </article>
+
+
+    </div>
+
+    <!-- BAR -->
+    <div class="flex justify-between pt-3">
+      <h2 class="font-semibold text-2xl pt-2">Deal Of the Days</h2>
+      <div class="flex gap-3 items-center">
+        <i class="text-[#FFB700] fa-regular fa-clock"></i>
+        <p>00 : 00 : 00</p>
+      </div>
+    </div>
+    <div class="w-full border-b border-[#2A2C2D] my-5"></div>
+
+    <!-- PRODUCTS 2 -->
+    <div id="products" class="">
+      <!-- PRODUCT -->
+      <article>
+        <div class="relative">
+          <img src="/assets/img/DOEReplica.webp" alt="">
+          <div class="absolute top-0 m-5 p-1 text-white bg-[#FFB700]">SOLDOUT</div>
+        </div>
+        <span class="font-semibold">Zbrake Disc For BMW</span>
+        <span class="">
+          <span class="flex gap-2 items-center">
+            <span id="product-price" class="text-[#FFB700]">$19.00</span>
+            <span id="product-promo" class="line-through text-[.8rem]">$29.00</span>
+            <span id="product-reduction" class="text-[#63A464]">-34%</span>
+          </span>
+        </span>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+      </article>
+
+      <article>
+        <div class="relative">
+          <img src="/assets/img/SteeringWheelCover.webp" alt="">
+          <div class="absolute top-0 m-5 p-1 text-white bg-[#FFB700]">SOLDOUT</div>
+        </div>
+        <span class="font-semibold">Zbrake Disc For BMW</span>
+        <span class="">
+          <span class="flex gap-2 items-center">
+            <span id="product-price" class="text-[#FFB700]">$19.00</span>
+            <span id="product-promo" class="line-through text-[.8rem]">$29.00</span>
+            <span id="product-reduction" class="text-[#63A464]">-34%</span>
+          </span>
+        </span>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+      </article>
+
+      <article>
+        <div class="relative">
+          <img src="/assets/img/BrakeDiscforBMW.webp" alt="">
+          <div class="absolute top-0 m-5 p-1 text-white bg-[#FFB700]">SOLDOUT</div>
+        </div>
+        <span class="font-semibold">Zbrake Disc For BMW</span>
+        <span class="">
+          <span class="flex gap-2 items-center">
+            <span id="product-price" class="text-[#FFB700]">$19.00</span>
+            <span id="product-promo" class="line-through text-[.8rem]">$29.00</span>
+            <span id="product-reduction" class="text-[#63A464]">-34%</span>
+          </span>
+        </span>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+      </article>
+
+      <article>
+        <div class="relative">
+          <img src="/assets/img/BrakePadsforChevrolet.webp" alt="">
+          <div class="absolute top-0 m-5 p-1 text-white bg-[#FFB700]">SOLDOUT</div>
+        </div>
+        <span class="font-semibold">Zbrake Disc For BMW</span>
+        <span class="">
+          <span class="flex gap-2 items-center">
+            <span id="product-price" class="text-[#FFB700]">$19.00</span>
+            <span id="product-promo" class="line-through text-[.8rem]">$29.00</span>
+            <span id="product-reduction" class="text-[#63A464]">-34%</span>
+          </span>
+        </span>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+        <i class="text-[#FFB700] fa-solid fa-star"></i>
+      </article>
+
+    </div>
+
+    <!-- BAR -->
+    <div class="flex justify-between pt-3">
+      <h2 class="font-semibold text-2xl pt-2">Our Brands</h2>
+    </div>
+    <div class="w-full border-b border-[#2A2C2D] my-5"></div>
+
+    <div class="flex flex-wrap  justify-center">
+      <img class="w-1/3" src="/assets/img/partner1.webp" alt="">
+      <img class="w-1/3" src="/assets/img/partner2.webp" alt="">
+      <img class="w-1/3" src="/assets/img/partner3.webp" alt="">
+      <img class="w-1/3" src="/assets/img/partner4.png" alt=""> <!--La 4 ne s'affiche pas-->
+      <img class="w-1/3" src="/assets/img/partner5.webp" alt="">
+      <img class="w-1/3" src="/assets/img/partner6.webp" alt="">
+      <img class="w-1/3" src="/assets/img/partner7.webp" alt="">
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <div class="flex bg-[#FFB700] justify-center items-center gap-5 px-2 py-24">
+
+    <i class="text-white text-5xl fa-solid fa-paper-plane"></i>
+    <div class="flex flex-col text-white text-2xl">
+      <span>Susbscribe Our</span>
+      <span>Newsletter</span>
+    </div>
+
+    <div class="bg-black">
+      <input class="p-2" type="email" placeholder="Enter Email Address" />
+      <button class="p-2 text-white">subscribe</button>
+    </div>
+
+  </div>
+
+  <!-- FOOTER CONTACT -->
+  <div class=" bg-[#2A2C2D] text-white p-3">
+
+    <section class="flex flex-col gap-2">
+      <div class="w-[40%]">
+        <img src="/assets/img/logo_light.avif" alt="" />
+      </div>
+      <p>Be proud of your code! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ipsum amet quasi rem
+        similique repellat ad quae eum.
+      <div class="flex flex-col gap-5">
+        <p>123 Street, Old Trafford, NewYork, USA</p>
+        <p>info@sitename.com</p>
+        <p>+33 666 666 666</p>
+      </div>
+    </section>
+
+    <section class="mt-10"> <!-- enlever mt en destkop -->
+      <a class="text-[1.5rem]" href=""><i class="ml-2  text-[#FFB700] fa-brands fa-square-instagram"></i> Instagram</a>
+      <div class="flex flex-wrap">
+        <img class="w-1/2 p-2" src="/assets/img/insta1.avif" alt="">
+        <img class="w-1/2 p-2" src="/assets/img/insta2.webp" alt="">
+        <img class="w-1/2 p-2" src="/assets/img/insta3.avif" alt="">
+        <img class="w-1/2 p-2" src="/assets/img/insta4.webp" alt="">
+        <img class="w-1/2 p-2" src="/assets/img/insta5.avif" alt="">
+        <img class="w-1/2 p-2" src="/assets/img/insta6.avif" alt="">
+        <img class="w-1/2 p-2" src="/assets/img/insta7.webp" alt="">
+      </div>
+    </section>
+    <div class="w-full border-b border-white my-5"></div>
+    <div class="text-white text-center bg-[#2A2C2D ]">
+      <p>© 2023 CEPPIC HTML/CSS/JS DWWM</p>
+    </div>
+  </div>
+</body>
+
+</html>
