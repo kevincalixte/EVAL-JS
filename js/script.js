@@ -15,33 +15,28 @@ selectCategory.addEventListener("click", () => {
         <img src="${imgSrc}" alt="">
         <a href="">${text}</a>
         `
+        const div = document.createElement("div")
+        div.classList.add("absolute", "top-0", "bg-white", "text-gray-500")
+
+        // SUB MENU
+        subMenu.forEach(item => {
+            // console.log(item.text)
+
+        })
+
+        document.body.append(div.subMenu)
         selectCategory.append(option)
     });
 
 })
 
 // CARROUSEL
-// IMAGE
 const slider = document.getElementById("container")
 const img = slider.getElementsByClassName("img")
 const nbImg = img.length
-// TEXT
-const text1 = document.getElementById("text1")
-const text2 = document.getElementById("text2")
 
-let current = 0;
-const textsa = ["Save 30% Now!", "New arrivals every week!", "You can Lorem Ipsum!"]
-const textsb = ["Summer Sale For Moto Parts", "Holidays Sale For Moto Parts", "Automn Sale For Moto Parts"]
-// const texts1 = ["Save 30% Now!", "New arrivals every week!"]
-// DELETE ACTIVE
-const deleteActive = () => {
-    for (let i = 0; i < nbImg; i++) {
-        img[i].classList.remove("active");
-    }
-    text1.textContent = textsa[current] || "";
-    text2.textContent = textsb[current] || "";
-}
 // CHANGE IMAGE AND TEXT
+let current = 0;
 setInterval(() => {
     current++
     if (current >= nbImg) {
@@ -50,6 +45,21 @@ setInterval(() => {
     deleteActive()
     img[current].classList.add("active")
 }, 5000);
+
+// DELETE ACTIVE
+const deleteActive = () => {
+    for (let i = 0; i < nbImg; i++) {
+        img[i].classList.remove("active");
+    }
+    text1.textContent = textsa[current] || "";
+    text2.textContent = textsb[current] || "";
+}
+// TEXT
+const text1 = document.getElementById("text1")
+const text2 = document.getElementById("text2")
+
+const textsa = ["Save 30% Now!", "New arrivals every week!", "You can Lorem Ipsum!"]
+const textsb = ["Summer Sale For Moto Parts", "Holidays Sale For Moto Parts", "Automn Sale For Moto Parts"]
 
 // DISABLED SOLDOUT/SALE
 const tag = document.querySelectorAll(".tag");
