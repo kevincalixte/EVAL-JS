@@ -15,22 +15,32 @@
   <!-- HEADER -->
   <header>
     <!-- NAV1 -->
-    <nav class="w-full h-20 flex items-center justify-between px-5 bg-black">
-      <div class="w-[40%]">
+    <nav class="w-full h-20 flex items-center justify-between px-5 md:px-40 md:h-16 bg-black">
+      <div class="w-[40%] md:w-[20%]">
         <img src="/assets/img/logo_light.avif" alt="" />
       </div>
       <div class="flex gap-5 text-white">
-        <i id="btnBurger" class="fa-solid fa-bars"></i>
+        <i id="btnBurger" class="fa-solid fa-bars md:hidden"></i>
         <i class="fa-solid fa-user"></i>
         <i class="fa-solid fa-heart"></i>
         <i class="fa-solid fa-cart-shopping"></i>
       </div>
     </nav>
     <!-- NAV2 -->
-    <nav class="flex justify-around p-4 bg-[#FFB700]">
-      <select class="px-10 my-1" name="categories" id="categories">
-        <option value="">ALL CATEGORIES</option>
-      </select>
+    <nav class="flex justify-evenly p-4 bg-[#FFB700] md:h-14 md:px-40">
+
+      <div class="flex items-center">
+        <select class="px-10 py-2 rounded-md " name="categories" id="categories">
+          <option value="">ALL CATEGORIES</option>
+        </select>
+        <ul class="hidden items-center gap-3 pl-2 md:flex"> <!-- A changer en flex en js-->
+          <li><a href="">HOME</a></li>
+          <li><a href="">SHOP</a></li>
+          <li><a href="">PAGES</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">CONTACT US</a></li>
+        </ul>
+      </div>
 
       <div class="flex gap-4 items-center">
         <i class="text-white fa-solid fa-phone-volume"></i>
@@ -40,7 +50,7 @@
     <!-- CAROUSEL  -->
     <section class="relative">
       <img src="/assets/img/slider-1-1.webp" alt="" />
-      <div class="absolute top-0 p-5 flex flex-col">
+      <div class="absolute top-0 p-5 flex flex-col md:px-40">
         <span class="text-[#FFB700]">Get up to 50% off Today Only!</span>
         <span class="text-2xl mb-7 border-white">Winter Sale For Auto Parts</span>
         <button class="py-2 w-[50%] text-white bg-[#FFB700]">SHOP NOW</button>
@@ -49,7 +59,7 @@
   </header>
 
   <!-- MAIN -->
-  <main class="px-3">
+  <main class="px-3 md:px-40">
     <!-- BAR -->
     <div class="flex justify-between pt-3">
       <h1 class="font-semibold text-2xl pt-2">Exclusive Products</h1>
@@ -62,12 +72,12 @@
     <div class="w-full border-b border-[#2A2C2D] my-5"></div>
 
     <!-- PRODUCTS 1 -->
-    <div id="products" class="">
+    <div id="products" class="flex flex-wrap">
       <!-- PRODUCT -->
-      <article>
+      <article class="md:w-1/4">
         <div class="relative">
-          <img src="/assets/img/BrakeDiscforBMW.webp" alt="">
-          <div class="absolute top-0 m-5 p-1 text-white bg-[#FFB700]">SOLDOUT</div>
+          <img class="" src="/assets/img/BrakeDiscforBMW.webp" alt="">
+          <div class="absolute top-0 m-5 p-2 text-white bg-[#FFB700]">SOLDOUT</div>
         </div>
         <span class="font-semibold">Zbrake Disc For BMW</span>
         <span class="">
@@ -85,10 +95,10 @@
         <i class="text-[#FFB700] fa-solid fa-star"></i>
       </article>
 
-      <article>
+      <article class="md:w-1/4">
         <div class="relative">
-          <img src="/assets/img/BrakePadsforChevrolet.webp" alt="">
-          <div class="absolute top-0 m-5 p-1 text-white bg-[#FFB700]">SOLDOUT</div>
+          <img class="" src="/assets/img/BrakePadsforChevrolet.webp" alt="">
+          <div class="absolute top-0 m-5 p-2 text-white bg-[#FFB700]">SOLDOUT</div>
         </div>
         <span class="font-semibold">Zbrake Disc For BMW</span>
         <span class="">
@@ -106,10 +116,10 @@
         <i class="text-[#FFB700] fa-solid fa-star"></i>
       </article>
 
-      <article>
+      <article class="md:w-1/4">
         <div class="relative">
-          <img src="/assets/img/V6EnginePiston.webp" alt="">
-          <div class="absolute top-0 m-5 p-1 text-white bg-[#FFB700]">SOLDOUT</div>
+          <img class="" src="/assets/img/V6EnginePiston.webp" alt="">
+          <div class="absolute top-0 m-5 p-2 text-white bg-[#FFB700]">SOLDOUT</div>
         </div>
         <span class="font-semibold">Zbrake Disc For BMW</span>
         <span class="">
@@ -127,10 +137,10 @@
         <i class="text-[#FFB700] fa-solid fa-star"></i>
       </article>
 
-      <article>
+      <article class="md:w-1/4">
         <div class="relative">
-          <img src="/assets/img/BrakeDiscforBMW.webp" alt="">
-          <div class="absolute top-0 m-5 p-1 text-white bg-[#FFB700]">SOLDOUT</div>
+          <img class="" src="/assets/img/BrakeDiscforBMW.webp" alt="">
+          <div class="absolute top-0 m-5 p-2 text-white bg-[#63A464]">SALE</div>
         </div>
         <span class="font-semibold">Zbrake Disc For BMW</span>
         <span class="">
@@ -162,12 +172,12 @@
     <div class="w-full border-b border-[#2A2C2D] my-5"></div>
 
     <!-- PRODUCTS 2 -->
-    <div id="products" class="">
+    <div id="products" class="flex flex-wrap">
       <!-- PRODUCT -->
-      <article>
+      <article class="md:w-1/4">
         <div class="relative">
           <img src="/assets/img/DOEReplica.webp" alt="">
-          <div class="absolute top-0 m-5 p-1 text-white bg-[#FFB700]">SOLDOUT</div>
+          <div class="absolute top-0 m-5 p-2 text-white bg-[#FFB700]">SOLDOUT</div>
         </div>
         <span class="font-semibold">Zbrake Disc For BMW</span>
         <span class="">
@@ -185,10 +195,10 @@
         <i class="text-[#FFB700] fa-solid fa-star"></i>
       </article>
 
-      <article>
+      <article class="md:w-1/4">
         <div class="relative">
           <img src="/assets/img/SteeringWheelCover.webp" alt="">
-          <div class="absolute top-0 m-5 p-1 text-white bg-[#FFB700]">SOLDOUT</div>
+          <div class="absolute top-0 m-5 p-2 text-white bg-[#FFB700]">SOLDOUT</div>
         </div>
         <span class="font-semibold">Zbrake Disc For BMW</span>
         <span class="">
@@ -206,10 +216,10 @@
         <i class="text-[#FFB700] fa-solid fa-star"></i>
       </article>
 
-      <article>
+      <article class="md:w-1/4">
         <div class="relative">
           <img src="/assets/img/BrakeDiscforBMW.webp" alt="">
-          <div class="absolute top-0 m-5 p-1 text-white bg-[#FFB700]">SOLDOUT</div>
+          <div class="absolute top-0 m-5 p-2 text-white bg-[#FFB700]">SOLDOUT</div>
         </div>
         <span class="font-semibold">Zbrake Disc For BMW</span>
         <span class="">
@@ -227,10 +237,10 @@
         <i class="text-[#FFB700] fa-solid fa-star"></i>
       </article>
 
-      <article>
+      <article class="md:w-1/4">
         <div class="relative">
           <img src="/assets/img/BrakePadsforChevrolet.webp" alt="">
-          <div class="absolute top-0 m-5 p-1 text-white bg-[#FFB700]">SOLDOUT</div>
+          <div class="absolute top-0 m-5 p-2 text-white bg-[#FFB700]">SOLDOUT</div>
         </div>
         <span class="font-semibold">Zbrake Disc For BMW</span>
         <span class="">
@@ -256,7 +266,8 @@
     </div>
     <div class="w-full border-b border-[#2A2C2D] my-5"></div>
 
-    <div class="flex flex-wrap  justify-center">
+    <!-- PARTNERS -->
+    <div class="flex flex-wrap justify-center  md:flex-nowrap  md:px-52">
       <img class="w-1/3" src="/assets/img/partner1.webp" alt="">
       <img class="w-1/3" src="/assets/img/partner2.webp" alt="">
       <img class="w-1/3" src="/assets/img/partner3.webp" alt="">
@@ -269,54 +280,60 @@
   </main>
 
   <!-- FOOTER -->
-  <div class="flex bg-[#FFB700] justify-center items-center gap-5 px-2 py-24">
+  <footer class="mt-2">
 
-    <i class="text-white text-5xl fa-solid fa-paper-plane"></i>
-    <div class="flex flex-col text-white text-2xl">
-      <span>Susbscribe Our</span>
-      <span>Newsletter</span>
+    <div class="flex bg-[#FFB700] justify-center items-center gap-5 px-2 py-24 md:py-16">
+
+      <i class="text-white text-5xl fa-solid fa-paper-plane"></i>
+      <div class="flex flex-col text-white text-2xl md:flex-row md:gap-2">
+        <span>Susbscribe Our</span>
+        <span>Newsletter</span>
+      </div>
+
+      <div class="bg-black md:text-sm">
+        <input class="p-2" type="email" placeholder="Enter Email Address" />
+        <button class="p-2 text-white">subscribe</button>
+      </div>
+
     </div>
 
-    <div class="bg-black">
-      <input class="p-2" type="email" placeholder="Enter Email Address" />
-      <button class="p-2 text-white">subscribe</button>
+    <!-- FOOTER CONTACT -->
+    <div class=" bg-[#2A2C2D] text-white md:text-xs p-3 md:px-40 md:flex">
+
+      <section class="flex flex-col gap-2">
+        <div class="w-[40%]">
+          <img src="/assets/img/logo_light.avif" alt="" />
+        </div>
+       
+        <p>Be proud of your code! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ipsum amet quasi rem
+          similique repellat ad quae eum.
+        <div class="flex flex-col gap-5">
+          <p><i class="fa-regular fa-paper-plane"></i> 123 Street, Old Trafford, NewYork, USA</p>
+          <p><i class="fa-solid fa-envelope"></i> info@sitename.com</p>
+          <p><i class="fa-solid fa-mobile-button"></i> +33 666 666 666</p>
+        </div>
+      </section>
+
+      <section class="mt-10 md:mt-0">
+        <a class="text-[1.5rem] md:text-[1.1rem]" href=""><i class="ml-2  text-[#FFB700] fa-brands fa-square-instagram"></i>
+          Instagram</a>
+        <div class="flex flex-wrap ">
+          <img class="w-1/2 md:w-1/4 p-2" src="/assets/img/insta1.avif" alt="">
+          <img class="w-1/2 md:w-1/4 p-2" src="/assets/img/insta2.webp" alt="">
+          <img class="w-1/2 md:w-1/4 p-2" src="/assets/img/insta3.avif" alt="">
+          <img class="w-1/2 md:w-1/4 p-2" src="/assets/img/insta4.webp" alt="">
+          <img class="w-1/2 md:w-1/4 p-2" src="/assets/img/insta5.avif" alt="">
+          <img class="w-1/2 md:w-1/4 p-2" src="/assets/img/insta6.avif" alt="">
+          <img class="w-1/2 md:w-1/4 p-2" src="/assets/img/insta7.webp" alt="">
+          <img class="w-1/2 md:w-1/4 p-2" src="/assets/img/insta8.avif" alt="">
+        </div>
+      </section>
     </div>
-
-  </div>
-
-  <!-- FOOTER CONTACT -->
-  <div class=" bg-[#2A2C2D] text-white p-3">
-
-    <section class="flex flex-col gap-2">
-      <div class="w-[40%]">
-        <img src="/assets/img/logo_light.avif" alt="" />
-      </div>
-      <p>Be proud of your code! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ipsum amet quasi rem
-        similique repellat ad quae eum.
-      <div class="flex flex-col gap-5">
-        <p>123 Street, Old Trafford, NewYork, USA</p>
-        <p>info@sitename.com</p>
-        <p>+33 666 666 666</p>
-      </div>
-    </section>
-
-    <section class="mt-10"> <!-- enlever mt en destkop -->
-      <a class="text-[1.5rem]" href=""><i class="ml-2  text-[#FFB700] fa-brands fa-square-instagram"></i> Instagram</a>
-      <div class="flex flex-wrap">
-        <img class="w-1/2 p-2" src="/assets/img/insta1.avif" alt="">
-        <img class="w-1/2 p-2" src="/assets/img/insta2.webp" alt="">
-        <img class="w-1/2 p-2" src="/assets/img/insta3.avif" alt="">
-        <img class="w-1/2 p-2" src="/assets/img/insta4.webp" alt="">
-        <img class="w-1/2 p-2" src="/assets/img/insta5.avif" alt="">
-        <img class="w-1/2 p-2" src="/assets/img/insta6.avif" alt="">
-        <img class="w-1/2 p-2" src="/assets/img/insta7.webp" alt="">
-      </div>
-    </section>
-    <div class="w-full border-b border-white my-5"></div>
-    <div class="text-white text-center bg-[#2A2C2D ]">
-      <p>© 2023 CEPPIC HTML/CSS/JS DWWM</p>
+    <div class="w-full border-b border-white my-5 md:my-0 "></div>
+    <div class="text-white text-center bg-[#2A2C2D] p-1">
+      <p class="text-bold">© 2023 CEPPIC HTML/CSS/JS DWWM</p>
     </div>
-  </div>
+  </footer>
 </body>
 
 </html>
