@@ -1,5 +1,5 @@
 // contenu du menu ALL CATEGORIES
-const menuContent = [
+ export const menuContent = [
     {
         imgSrc: "./assets/img/menu1.webp",
         text: "Steering Cover",
